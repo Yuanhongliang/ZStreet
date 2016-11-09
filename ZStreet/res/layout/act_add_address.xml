@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#626262" >
+
+        <ImageView
+            android:id="@+id/act_add_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="增加收货地址"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/act_add_choose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_shape"
+        android:padding="7dp"
+        android:text="选择地址"
+        android:textColor="#828282"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/act_add_street"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et_shape"
+        android:hint="填写街道/乡镇"
+        android:padding="7dp"
+        android:textColor="#525252"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/act_add_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et_shape"
+        android:hint="请输入收货人姓名"
+        android:padding="7dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/act_add_phonenumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et_shape"
+        android:hint="请输入收货人手机号"
+        android:inputType="phone"
+        android:padding="7dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/act_add_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/but2_selecter"
+        android:gravity="center"
+        android:padding="7dp"
+        android:text="添加"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/act_add_lin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/act_add_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="取消"
+                android:textColor="#00bfff"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/act_add_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="确定"
+                android:textColor="#00bfff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:paddingTop="20dp" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.xiaoyuan.zstreet.myview.loopview.LoopView
+                android:id="@+id/act_add_loop1"
+                android:layout_width="100dp"
+                android:layout_height="300dp"
+                android:background="#fff" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.xiaoyuan.zstreet.myview.loopview.LoopView
+                android:id="@+id/act_add_loop2"
+                android:layout_width="100dp"
+                android:layout_height="300dp"
+                android:background="#fff" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.xiaoyuan.zstreet.myview.loopview.LoopView
+                android:id="@+id/act_add_loop3"
+                android:layout_width="100dp"
+                android:layout_height="300dp"
+                android:background="#fff" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

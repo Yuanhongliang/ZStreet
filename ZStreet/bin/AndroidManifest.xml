@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoyuan.zstreet"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <!-- Bmob使用权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- Bmob使用权限 -->
+
+
+    <!-- Bmob支付权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Bmob支付权限 -->
+
+    <application
+        android:name="com.xiaoyuan.zstreet.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.xiaoyuan.zstreet.HomeActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.xiaoyuan.zstreet.InitActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaoyuan.zstreet.LoginActivity" >
+        </activity>
+        <activity android:name="com.xiaoyuan.zstreet.RegisterActivity" >
+        </activity>
+        <activity android:name="com.xiaoyuan.zstreet.FindPassActivity" >
+        </activity>
+        <activity
+            android:name="com.xiaoyuan.zstreet.GoodsDetailActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity android:name="com.xiaoyuan.zstreet.AddAddressActivity" >
+        </activity>
+        <activity android:name="com.xiaoyuan.zstreet.SearchResActivity" >
+        </activity>
+        <activity android:name="com.xiaoyuan.zstreet.ShowAddressActivity" >
+        </activity>
+        <activity android:name="com.xiaoyuan.zstreet.PayActivity" >
+        </activity>
+        <activity android:name="com.xiaoyuan.zstreet.OrderActivity" >
+        </activity>
+        <activity android:name="com.xiaoyuan.zstreet.ChangePassActivity" >
+        </activity>
+        <activity android:name="com.xiaoyuan.zstreet.FankuiActivity" >
+        </activity>
+        <activity android:name="com.xiaoyuan.zstreet.CommentActivity" >
+        </activity>
+        <activity android:name="com.ksfc.framework.lib.widget.image.BigPicActivity" >
+        </activity>
+        <activity android:name="com.xiaoyuan.zstreet.PayPasswordActivity" >
+        </activity>
+        <activity
+            android:name="c.b.a.A"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="c.b.a.B"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+    </application>
+
+</manifest>

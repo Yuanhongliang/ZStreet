@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#828282" >
+
+        <ImageView
+            android:id="@+id/act_goodsdet_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="商品详情"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/act_goodsdet_vp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="320dp" >
+                </android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <View
+                        android:id="@+id/act_goodsdet_view1"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="#ff4400" />
+
+                    <View
+                        android:id="@+id/act_goodsdet_view2"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="#e5e5e5" />
+
+                    <View
+                        android:id="@+id/act_goodsdet_view3"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="#e5e5e5" />
+
+                    <View
+                        android:id="@+id/act_goodsdet_view4"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="#e5e5e5" />
+
+                    <View
+                        android:id="@+id/act_goodsdet_view5"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        android:layout_weight="1"
+                        android:background="#e5e5e5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/act_goodsdet_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="NIKE AirJorden 运动鞋蓝灰黑各种颜色都有真的是日可供阿凡达范德萨的撒范德萨发达"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/act_goodsdet_price"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="¥45.00"
+                        android:textColor="#ff0000"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="颜色"
+                            android:textColor="#626262" />
+
+                        <TextView
+                            android:id="@+id/act_goodsdet_red"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/red_stroke_shape"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="红色"
+                            android:textColor="#626262" />
+
+                        <TextView
+                            android:id="@+id/act_goodsdet_green"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="绿色"
+                            android:textColor="#626262" />
+
+                        <TextView
+                            android:id="@+id/act_goodsdet_blue"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="蓝色"
+                            android:textColor="#626262" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="尺寸"
+                            android:textColor="#626262" />
+
+                        <TextView
+                            android:id="@+id/act_goodsdet_L"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/red_stroke_shape"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="L"
+                            android:textColor="#626262" />
+
+                        <TextView
+                            android:id="@+id/act_goodsdet_XL"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="XL"
+                            android:textColor="#626262" />
+
+                        <TextView
+                            android:id="@+id/act_goodsdet_XXL"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="XXL"
+                            android:textColor="#626262" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="数量"
+                            android:textColor="#626262" />
+
+                        <EditText
+                            android:id="@+id/act_goodsdet_num"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@null"
+                            android:inputType="number"
+                            android:text="1"
+                            android:textColor="#626262" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="#fff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评论"
+                        android:textColor="#626262" />
+
+                    <com.xiaoyuan.zstreet.myview.MyListView
+                        android:id="@+id/act_det_comment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#828282"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/act_goodsdet_fav"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/hearton" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="收藏"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/act_goodsdet_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#ff2200"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="立即购买"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/act_goodsdet_jia"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#ff4400"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="加入购物车"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

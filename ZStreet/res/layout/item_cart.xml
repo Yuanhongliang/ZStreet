@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/item_cart_choose"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/allchoose" />
+
+    <ImageView
+        android:id="@+id/item_cart_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/icon" />
+
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_cart_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="修身V领背心连衣裙我真的是日了狗了"
+            android:textColor="#525252"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="颜色:"
+                android:textColor="#828282"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_cart_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="灰色"
+                android:textColor="#828282"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="尺码:"
+                android:textColor="#626262"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_cart_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XL-180"
+                android:textColor="#626262"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/item_cart_jian"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/grey_selector"
+                android:text="-"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/item_cart_num"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/item_cart_jia"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/grey_selector"
+                android:text="+"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥"
+                        android:textColor="#ff0000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/item_cart_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100.0"
+                        android:textColor="#ff0000" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

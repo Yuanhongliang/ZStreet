@@ -5,8 +5,5 @@ A simple on-line shopping application.
 >不过这是自己开发的第一个项目，我还是很无耻的传了上来。
 ***
 下面是应用的几张截图：
-![](https://github.com/qq739952903/ZStreet/blob/master/screenshot/S61109-16400604.jpg)
-![](https://github.com/qq739952903/ZStreet/blob/master/screenshot/S61109-16401420.jpg)
-![](https://github.com/qq739952903/ZStreet/blob/master/screenshot/S61109-16402290.jpg)
-![](https://github.com/qq739952903/ZStreet/blob/master/screenshot/S61109-16403082.jpg)
-![](https://github.com/qq739952903/ZStreet/blob/master/screenshot/S61109-16404645.jpg)
+***
+<img src="https://github.com/qq739952903/ZStreet/blob/master/screenshot/S61109-16400604.jpg" width=200 height=500 /><img src="https://github.com/qq739952903/ZStreet/blob/master/screenshot/S61109-16401420.jpg" width=200 height=500 /><img src="https://github.com/qq739952903/ZStreet/blob/master/screenshot/S61109-16402290.jpg" width=200 height=500 /><img src="https://github.com/qq739952903/ZStreet/blob/master/screenshot/S61109-16403082.jpg" width=200 height=500 /><img src="https://github.com/qq739952903/ZStreet/blob/master/screenshot/S61109-16404645.jpg" width=200 height=500 />
